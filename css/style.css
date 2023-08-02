@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1 {
+    color: green;
+    border: 2px solid grey;
+}
+
+p {
+    color: brown;
+    font-weight: normal;
+}
+
+span {
+    color: brown;
+    font-weight: bold;
+}
