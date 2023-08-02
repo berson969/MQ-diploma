@@ -30,3 +30,12 @@ span {
     color: brown;
     font-weight: bold;
 }
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
