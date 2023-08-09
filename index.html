@@ -9,59 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--                  POPUP                             -->
-<!--<div class="overlay">-->
-    <div class="popup">
-        <header class="popup__title">
-            <h2 class="title">Ваш Фидбек</h2>
-        </header>
-<!--    FORM-->
-    <form class="form-box">
-<!--        DropDown-->
-        <div class="dropdown box">
-            <p class="dropdown__title subject">Как часто вы заходите на сайт?</p>
-            <label for="dropdown" class="dropdown__select">
-                <select name="test-selected" id="dropdown">
-                    <option value="очень часто" class="dropdown-item" selected>Почти каждый день</option>
-                    <option value="часто" class="dropdown-item">Раз в несколько дней</option>
-                    <option value="редко" class="dropdown-item">Раз в несколько недель</option>
-                    <option value="очень редко" class="dropdown-item">Несколько раз в год</option>
-                </select>
-            </label>
-        </div>
-<!--        Radio Button-->
-        <div class="radio box">
-            <p class="radio__title subject">Вы подписаны на e-mail рассылку?</p>
-            <div>
-                <label class="radio-btn">
-                    <input type="radio" id="yes-btn" name="yes-no" class="visually-hidden">
-                    <span class="radio-icon">Да</span>
-                </label>
-                <label class="radio-btn">
-                    <input type="radio" id="no-btn" name="yes-no" class="visually-hidden">
-                    <span class="radio-icon">Нет</span>
-                </label>
-            </div>
-        </div>
-
-<!--        Textarea-->
-        <div class="text box">
-            <p class="text__title subject" >Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-            <label class="text-label">
-                <textarea class="textarea">Может, больше рецептов?</textarea>
-            </label>
-        </div>
-<!--        Button SEND-->
-        <div class="send box">
-            <input class="btn" type="submit">
-        </div>
-    </form>
-<!--        Button CLOSE-->
-    <button type="button" class="popup__close" aria-label="Close">
-        <span class="btn__close" aria-hidden="true"></span>
-    </button>
-</div>
-<!--</div>-->
 <!--                Header BANNER               -->
 <header class="banner">
     <nav class="nav">
@@ -130,7 +77,7 @@
 <!--SIDEBAR-->
         <aside class="sidebar">
 <!--Section NEW-POSTS-->
-            <section class="new-posts">
+            <section class="new-posts sidebar-container">
                 <h3 class="header title">новые посты</h3>
                 <div class="new-posts-box">
                     <article class="new-post">
@@ -171,7 +118,7 @@
                 </div>
             </section>
 <!--Section SEARCH-->
-            <section class="search">
+            <section class="search sidebar-container">
                 <label for="query"> </label>
                 <input id="query" placeholder="Найти..." required>
                 <button class="search-btn">
@@ -179,16 +126,16 @@
                 </button>
             </section>
 <!--Section SUBSCRIBE-->
-            <section class="subscribe">
+            <section class="subscribe sidebar-container">
                 <h3 class="header title">рассылка</h3>
                 <div class="subs-content">
                     <label for="email"></label>
                     <input id="email" placeholder="Ваш e-mail адрес" type="email" required>
-                    <button class="subs-btn">Подписаться</button>
+                    <button class="button">Подписаться</button>
                 </div>
             </section>
 <!--Section TAGS-->
-            <section class="tags">
+            <section class="tags sidebar-container">
                 <h3 class="header title">Теги</h3>
                 <div class="tag-content">
                     <span class="tag">fashion</span>
@@ -201,8 +148,8 @@
                     <span class="tag">health</span>
                 </div>
             </section>
-<!--Section THEMES-->
-            <section class="themes">
+<!--Section THEMES-->-
+            <section class="themes sidebar-container">
                 <h3 class="header title">Темы</h3>
                 <ul class="themes-list">
                     <li class="theme">
@@ -230,6 +177,62 @@
                         <span class="theme__tag">8</span>
                     </li>
                 </ul>
+            </section>
+<!--Section SHOWPOPUP-->
+            <section class="show-popup sidebar-container">
+                <label for="popup-popup" class="button">Показать POPUP</label>
+                <input id="popup-popup" type="checkbox" class="visually-hidden">
+<!--  POPUP        POPUP         POPUP                -->
+                <div class="overlay">
+                    <div class="popup">
+                        <header class="popup__title">
+                            <h2 class="title">Ваш Фидбек</h2>
+                        </header>
+                        <!--    FORM-->
+                        <form class="form-box">
+                            <!--        DropDown-->
+                            <div class="dropdown box">
+                                <p class="dropdown__title subject">Как часто вы заходите на сайт?</p>
+                                <label for="dropdown" class="dropdown__select">
+                                    <select name="test-selected" id="dropdown">
+                                        <option value="очень часто" class="dropdown-item" selected>Почти каждый день</option>
+                                        <option value="часто" class="dropdown-item">Раз в несколько дней</option>
+                                        <option value="редко" class="dropdown-item">Раз в несколько недель</option>
+                                        <option value="очень редко" class="dropdown-item">Несколько раз в год</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <!--        Radio Button-->
+                            <div class="radio box">
+                                <p class="radio__title subject">Вы подписаны на e-mail рассылку?</p>
+                                <div>
+                                    <label class="radio-btn">
+                                        <input type="radio" id="yes-btn" name="yes-no" class="visually-hidden">
+                                        <span class="radio-icon">Да</span>
+                                    </label>
+                                    <label class="radio-btn">
+                                        <input type="radio" id="no-btn" name="yes-no" class="visually-hidden">
+                                        <span class="radio-icon">Нет</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--        Textarea-->
+                            <div class="text box">
+                                <p class="text__title subject" >Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                                <label class="text-label">
+                                    <textarea class="textarea">Может, больше рецептов?</textarea>
+                                </label>
+                            </div>
+<!--                             Button SEND-->
+                            <div class="send box">
+                                <input class="btn" type="submit">
+                            </div>
+<!--                            Button CLOSE-->
+                            <label class="popup__close" for="popup-popup"></label>
+                        </form>
+                    </div>
+                </div>
             </section>
         </aside>
 <!--Section POSTS-->
@@ -318,7 +321,6 @@
         <div class="shop-items">
         <article class="shop-item">
             <img class="shop-item__img" src="./images/shop-item-desk1.jpg" alt="No images">
-            <div class="shop-item__main">
                 <h2 class="shop-item__title">Подушки на диван</h2>
                 <p class="shop-item__text">Набор из двух подушек с модными принтами. Видео о создании <a class="hint" href="#0">здесь.</a></p>
                 <div class="bottom-item">
@@ -328,11 +330,9 @@
                     </div>
                     <a href="#0" class="shop-btn">В магазин</a>
                 </div>
-            </div>
         </article>
         <article class="shop-item">
             <img class="shop-item__img" src="./images/shop-item-desk2.jpg" alt="No images">
-            <div class="shop-item__main">
                 <h2 class="shop-item__title">Кукла «Зайчик»</h2>
                 <p class="shop-item__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
                         href="#0" class="hint">весенняя серия постов</a>  в блоге и несколько подкастов.</p>
@@ -342,11 +342,9 @@
                     </div>
                     <a href="#0" class="shop-btn">В магазин</a>
                 </div>
-            </div>
         </article>
         <article class="shop-item">
             <img class="shop-item__img" src="./images/shop-item-desk3.jpg" alt="No images">
-            <div class="shop-item__main">
                 <h2 class="shop-item__title">Шестиугольная рамка</h2>
                 <p class="shop-item__text">Необычная рамка для украшения дома из видео <a href="#0" class="hint">«Как сделать рамку из подручных средств за 30 минут» </a></p>
                 <div class="bottom-item">
@@ -356,7 +354,6 @@
                     </div>
                     <a href="#0" class="shop-btn">В магазин</a>
                 </div>
-            </div>
         </article>
         </div>
     </section>
@@ -364,13 +361,13 @@
 <footer>
 <!--                SOCIALS               -->
     <address class="socials">
-        <a href="#0" class="socials-link dribbble">
+        <a href="#" class="socials-link" style="background-image: url('./svg/001-dribbble.svg');">
             <span class="socials-link-text">dribbble</span>
         </a>
-        <a href="#0" class="socials-link pinterest">
+        <a href="#" class="socials-link" style="background-image: url('./svg/001-pinterest.svg');">
             <span class="socials-link-text">pinterest</span>
         </a>
-        <a href="#0" class="socials-link twitter">
+        <a href="#" class="socials-link" style="background-image: url('./svg/003-tumblr.svg');">
             <span class="socials-link-text">tumblr</span>
         </a>
     </address>

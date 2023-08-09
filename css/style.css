@@ -20,7 +20,6 @@
 
 body {
     font-family: 'OpenSans', sans-serif;
-    /*font-size: 13px;*/
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -41,8 +40,7 @@ h2 {
 }
 
 .title {
-    /*margin: 2.7em 0;;*/
-    padding-bottom: 2.7em;
+    padding-bottom: 2.25em;
     color: #0f0d0e;
     display: inline-block;
     text-align: center;
@@ -51,7 +49,7 @@ h2 {
 
 .title::after {
     content: "";
-    bottom: 30px;
+    bottom: 1.5em;
     width: 67px;
     height: 4px;
     display: inline-block;
@@ -70,28 +68,47 @@ h2 {
 }
 
 /*CSS style for POPUP*/
+#popup-popup:checked ~ .overlay {
+    top: 0;
+}
+
 .overlay {
     position: fixed;
-    top: 0;
+    top: -9999px;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
-    pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s all
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    opacity: 0.6;
+    pointer-events: all;
 }
 
 .popup {
-    width: 23.5%;
-    height: 35.5vw;
-    padding: 2.7em 2.3em 0 2.3em;
+    width: 390px;
+    height: 589px;
+    /*width: 23.5%;*/
+    /*height: 35.5vw;*/
+    padding: 2.7em 2.3em;
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #fff;
-    z-index: 4;
     border: 1px solid black;
+    z-index: 5;
 }
 
 .popup__title {
@@ -108,6 +125,7 @@ h2 {
     text-transform: none;
     font-weight: normal;
     font-size: 0.8rem;
+    /*flex-grow: 1;*/
 }
 
 /*CSS style for DropDown*/
@@ -116,7 +134,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 1.6em;
 }
 
 .dropdown__select {
@@ -156,9 +174,6 @@ h2 {
 .radio-icon {
     display: inline-block;
     width: 2.5em;
-    /*height: 1.58em;*/
-    /*width: 30px;*/
-    /*height: 20px;*/
     text-align: center;
     line-height: 1.58em;
     position: relative;
@@ -166,8 +181,8 @@ h2 {
 
 .radio-icon:before {
     content: "";
-    width: 1.7em;
-    height: 1.7em;
+    width: 1.5em;
+    height: 1.5em;
     left: -1.5em;
     position: absolute;
     background-image: url("../svg/form-empty-circle.svg");
@@ -194,7 +209,7 @@ h2 {
 /*CSS style for TextArea*/
 .text-label {
     width: 100%;
-    margin-top: 1.45em;
+    /*margin-top: 1.45em;*/
 }
 
 .textarea {
@@ -217,6 +232,10 @@ h2 {
 
 
 /*CSS style for Button Send*/
+.send {
+    margin-bottom: 0;
+}
+
 .btn {
     width: 100%;
     display: block;
@@ -246,17 +265,17 @@ h2 {
     background-color: transparent;
     background-image: url("../svg/form-x.svg");
     background-size: cover;
+    cursor: pointer;
 }
 
 .popup__close:before, .popup__close:after {
     width: 1.4em;
-    height: 0.2em;
+    height: 1.4em;
 }
 
 /*CSS style for BANNER*/
 .banner {
     width: 100%;
-    height: 28em;
     background-image: url('../images/banner-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -349,7 +368,6 @@ h2 {
 .article {
     width: 25%;
     height: 20em;
-    /*margin: 1.31em;*/
     padding: 1.3em;
     position: relative;
 }
@@ -361,7 +379,7 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: -2;
-    background-size: cover;
+    background-size: contain;
 }
 
 .trend-background::before {
@@ -424,7 +442,8 @@ h2 {
     width: 23.08%;
 }
 
-.new-posts, .search, .themes, .tags, .subscribe {
+/*.new-posts, .search, .themes, .tags, .subscribe, .show-popup {*/
+.sidebar-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -514,7 +533,7 @@ h2 {
     line-height: 3.07em;
     color: #000000;
     width: 100%;
-    margin: 0.65em;
+    margin-bottom: 0.65em;
     border: none;
     padding-left: 1.2em;
 }
@@ -524,7 +543,7 @@ h2 {
     border: 1px solid #b59f5b;
 }
 
-.subs-btn {
+.button {
     font-size: 0.81em;
     line-height: 3.07em;
     text-transform: uppercase;
@@ -533,10 +552,11 @@ h2 {
     border: none;
     flex-grow: 1;
     width: 100%;
-    margin: 0.65em;
+    text-align: center;
+    cursor: pointer;
 }
 
-.subs-btn:hover {
+.button:hover {
     background-color: #313131;
 }
 
@@ -610,61 +630,42 @@ h2 {
     display: flex;
     flex-direction: column;
     padding-left: 2em;
+    color: #0f0d0e;
 }
 
 .post__title {
-    font-size: 1.25rem;
     line-height: 1.45em;
-    color: #0f0d0e;
     text-align: left;
 }
 
 .date-author {
     display: inline-block;
+    font-size: 0.75em;
+    font-weight: normal;
+    text-transform: none;
     padding: 0.8em 0;
 }
 
-/*.post__date {*/
-/*    font-size: 12px;*/
-/*    line-height: 40px;*/
-/*    color: #888888;*/
-/*    font-weight: normal;*/
-/*    text-transform: none;*/
-}
-
-.post__date {
-    font-size: 0.75em;
-    font-weight: normal;
-    text-transform: none;
-    /*opacity: 0.541;*/
-    color: #000000;
-    /*vertical-align: text-top;*/
-}
-
 .post__author {
-    font-size: 0.75em;
-    /*font-size: 12px;*/
-    /*line-height: 40px;*/
-    color: #000000;
-    text-transform: none;
-    margin-left: 17px;
+    font-weight: bold;
+    margin-left: 1.4em;
 }
 
 .post-text {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 1.07em;
+    line-height: 1.47em;
     font-weight: normal;
     text-transform: none;
-    color: #0f0d0e;
+    padding-bottom: 0.5em;
 }
 
 /*CSS style for SHOP*/
 .shop {
     display: flex;
     width: 100%;
-    padding-top: 22px;
+    padding-top: 0.25em;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 1.1em;
 }
 
 .shop-items {
@@ -675,47 +676,45 @@ h2 {
 
 .shop-item {
     width: 33%;
-    margin: 35px;
     display: flex;
     flex-direction: column;
+    margin-top: 17.5%;
+    padding: 1.25em;
     position: relative;
-    align-items: stretch;
+    border: 3px solid #b59f5b;
+}
+
+.shop-item:nth-child(3n+2) {
+    margin-left: 4.2em;
+    margin-right: 4.2em;
 }
 
 .shop-item__img {
-    width: 300px;
-    height: 204px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #eff5f1;
-}
-
-.shop-item__main {
-    /*width: 469px;*/
+    position: absolute;
+    bottom: 80%;
+    left: 0;
+    z-index: -1;
     width: 100%;
-    /*position: absolute;*/
-    /*top: 172px;*/
-    /*height: 267px;*/
-    display: flex;
-    flex-direction: column;
-    outline: 3px solid #b59f5b;
-    padding-top: 29px;
-    /*margin-left: 33px;*/
-    /*margin-right: 33px;*/
-    margin-top: -29px;
+    /*height: 100%;*/
+    padding: 1.56em;
+    background-color: transparent;
+    /*object-fit: cover;*/
+
 }
 
 .shop-item__title {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 40px;
     color: #0f0d0e;
-    padding-left: 20px;
+    text-align: left;
+    /*padding-left: 20px;*/
+    margin-top: 36px;
 }
 
 .shop-item__text {
     font-size: 15px;
     font-weight: normal;
-    padding: 20px;
+    /*padding: 20px;*/
     text-transform: none;
     line-height: 22px;
     color: #0f0d0e;
@@ -745,13 +744,13 @@ h2 {
 }
 
 .shop-item__price {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.2em;
     color: #0f0d0e;
 }
 
 .old {
-    font-size: 14px;
+    font-size: 1.14rem;
     text-decoration: line-through;
 }
 
@@ -775,37 +774,28 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 2.8em 0;
 }
 
 .socials {
-    width: 70%;
-    height: 84px;
+    width: 70.48%;
+    height: 5.25em;
     background: #f4f7f6;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 34px;
 }
 
 .socials-link {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.dribbble {
-    background-image: url("/Users/berson969/WebstormProjects/MQ-diploma/svg/001-dribbble.svg");
-}
-
-.pinterest {
-    background-image: url("/Users/berson969/WebstormProjects/MQ-diploma/svg/001-pinterest.svg");
-    margin: 0 30px;
-}
-
-.twitter {
-    background-image: url("/Users/berson969/WebstormProjects/MQ-diploma/svg/003-tumblr.svg");
+.socials-link:nth-child(even) {
+    margin: 0 1.5em;
 }
 
 .socials-link-text {
@@ -816,10 +806,10 @@ footer {
 }
 
 .copyright {
-    font-size: 12px;
-    line-height: 40px;
+    font-size: 0.75em;
+    line-height: 3.3em;
     color: #999999;
     text-transform: none;
     text-align: center;
-    margin: 47px;
+    margin-top: 6em;
 }
