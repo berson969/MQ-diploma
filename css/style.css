@@ -82,7 +82,8 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.5s all
+    transition: 0.5s all;
+    z-index: 4;
 }
 
 .overlay:after {
@@ -100,15 +101,12 @@ h2 {
 .popup {
     width: 390px;
     height: 589px;
-    /*width: 23.5%;*/
-    /*height: 35.5vw;*/
     padding: 2.7em 2.3em;
     display: flex;
     flex-direction: column;
     position: relative;
     background-color: #fff;
     border: 1px solid black;
-    z-index: 5;
 }
 
 .popup__title {
@@ -209,7 +207,6 @@ h2 {
 /*CSS style for TextArea*/
 .text-label {
     width: 100%;
-    /*margin-top: 1.45em;*/
 }
 
 .textarea {
@@ -223,7 +220,6 @@ h2 {
     opacity: 0.541;
     color: #000000;
     padding: 1.4em;
-    /*flex-grow: 1;*/
 }
 
 .textarea:focus {
@@ -340,7 +336,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 1;
     flex-grow: 1;
 }
@@ -357,7 +352,6 @@ h2 {
     padding-top: 3.9em;
     display: flex;
     flex-direction: column;
-    /*margin-bottom: 50px;*/
 }
 
 .wrapper {
@@ -407,7 +401,6 @@ h2 {
 .categories {
     display: flex;
     align-items: flex-start;
-    /*color: #b59f5b;*/
 }
 
 .category {
@@ -442,7 +435,6 @@ h2 {
     width: 23.08%;
 }
 
-/*.new-posts, .search, .themes, .tags, .subscribe, .show-popup {*/
 .sidebar-container {
     width: 100%;
     display: flex;
@@ -707,14 +699,12 @@ h2 {
     line-height: 40px;
     color: #0f0d0e;
     text-align: left;
-    /*padding-left: 20px;*/
     margin-top: 36px;
 }
 
 .shop-item__text {
     font-size: 15px;
     font-weight: normal;
-    /*padding: 20px;*/
     text-transform: none;
     line-height: 22px;
     color: #0f0d0e;
@@ -732,8 +722,6 @@ h2 {
 .bottom-item {
     display: flex;
     justify-content: space-between;
-    /*align-self: flex-end;*/
-    /*width: 100%;*/
     padding: 20px;
 }
 
