@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'OpenSans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.81rem; /* 45px */
+    line-height: 1.67em;
+}
+h2 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.45em;
+}
+
+h3 {
+    font-size: 0.87rem; /* 14px */
+    line-height: 2.07em;
+}
+
+h4 {
+    font-size: 0.75rem;  /* 12px */
+    line-height: 3.33em;
+    text-transform: none;
+    display: inline-block;
+}
+
+p {
+    font-size: 0.94rem;  /* 15px */
+    line-height: 1.47em;
+    font-weight: normal;
+    text-transform: none;
+}

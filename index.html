@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,13 +8,18 @@
     <title>HTML-diploma</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!--    <link rel="stylesheet" href="css/style-common.css">-->
+<!--    <link rel="stylesheet" href="css/style-mobile-first.css" class="css">-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <!--                Header BANNER               -->
 <header class="banner">
     <nav class="nav">
+        <button class="menu-burger">
+            <span class="menu-burger-label">открыть меню</span>
+        </button>
         <ul class="menu">
             <li class="menu__link"><a href="#0" class="link">Главная</a></li>
             <li class="menu__link"><a href="#0" class="link">Посты</a></li>
@@ -77,6 +82,85 @@
     </section>
 <!--               CENTRAL BLOCK         -->
     <div class="block">
+<!--        Section POSTS     -->
+        <section class="post-list">
+            <article class="post">
+                <img class="post__img" src="./images/last-post1.jpg" alt="No images">
+                <div class="post-box">
+                    <div class="categories">
+                        <h3 class="category">travel</h3>
+                        <h3 class="category">health</h3>
+                    </div>
+                    <h2 class="post__title">10 мест, ради которых стоит проснуться на рассвете</h2>
+                    <div class="date-author">
+                        <h4 class="post__date">10 июня 2019</h4>
+                        <h4 class="post__author">Неизвестный автор</h4>
+                    </div>
+                    <p class="post__text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+                </div>
+            </article>
+            <article class="post">
+                <img class="post__img" src="./images/last-post2.jpg" alt="No images">
+                <div class="post-box">
+                    <div class="categories">
+                        <h3 class="category">health</h3>
+                        <h3 class="category">lifestyle</h3>
+                    </div>
+                    <h2 class="post__title">ЙОга для начинающих в домашних условиях</h2>
+                    <div class="date-author">
+                        <h4 class="post__date">10 июня 2019</h4>
+                        <h4 class="post__author">Неизвестный автор</h4>
+                    </div>
+                    <p class="post__text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+                </div>
+            </article>
+            <article class="post">
+                <img class="post__img" src="./images/last-post3.jpg" alt="No images">
+                <div class="post-box">
+                    <div class="categories">
+                        <h3 class="category">music</h3>
+                    </div>
+                    <h2 class="post__title">Лучшие музыкальные фестивали этого лета</h2>
+                    <div class="date-author">
+                        <h4 class="post__date">10 июня 2019</h4>
+                        <h4 class="post__author">Неизвестный автор</h4>
+                    </div>
+                    <p class="post__text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+                    <p class="post__text">Мы составили список лучших летних фестивалей по всему миру.</p>
+                </div>
+            </article>
+            <article class="post">
+                <img class="post__img" src="./images/last-post4.jpg" alt="No images">
+                <div class="post-box">
+                    <div class="categories">
+                        <h3 class="category">lifestyle</h3>
+                        <h3 class="category">food</h3>
+                    </div>
+                    <h2 class="post__title">Наукоёмкий подход к кулинарии</h2>
+                    <div class="date-author">
+                        <h4 class="post__date">10 июня 2019</h4>
+                        <h4 class="post__author">Неизвестный автор</h4>
+                    </div>
+                    <p class="post__text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+                </div>
+            </article>
+            <article class="post">
+                <img class="post__img" src="./images/last-post5.jpg" alt="No images">
+                <div class="post-box">
+                    <div class="categories">
+                        <h3 class="category">travel</h3>
+                        <h3 class="category">interior</h3>
+                        <h3 class="category">art</h3>
+                    </div>
+                    <h2 class="post__title">делаем модные принты на подушках для интерьера </h2>
+                    <div class="date-author">
+                        <h4 class="post__date">10 июня 2019</h4>
+                        <h4 class="post__author">Неизвестный автор</h4>
+                    </div>
+                    <p class="post__text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+                </div>
+            </article>
+        </section>
 <!--SIDEBAR-->
         <aside class="sidebar">
 <!--Section NEW-POSTS-->
@@ -100,21 +184,21 @@
                     <article class="new-post">
                         <img class="new-post__img" src="./images/45.jpg" alt="No images">
                         <div class="new-post-content">
-                            <span class="new-post__date">14 июня 2019</span>
+                            <h4 class="new-post__date">14 июня 2019</h4>
                             <h3 class="new-post__title">Как мы превратили классное место в балкон</h3>
                         </div>
                     </article>
                     <article class="new-post">
                         <img class="new-post__img" src="./images/501.jpg" alt="No images">
                         <div class="new-post-content">
-                            <span class="new-post__date">14 июня 2019</span>
+                            <h4 class="new-post__date">14 июня 2019</h4>
                             <h3 class="new-post__title">Кулинарный подход к науке</h3>
                         </div>
                     </article>
                     <article class="new-post">
                         <img class="new-post__img" src="./images/7.jpg" alt="No images">
                         <div class="new-post-content">
-                            <span class="new-post__date">14 июня 2019</span>
+                            <h4 class="new-post__date">14 июня 2019</h4>
                             <h3 class="new-post__title">Лучшие прически для распущенных волос</h3>
                         </div>
                     </article>
@@ -238,85 +322,6 @@
                 </div>
             </section>
         </aside>
-<!--Section POSTS-->
-        <section class="post-list">
-            <article class="post">
-                <img class="post__img" src="./images/last-post1.jpg" alt="No images">
-                <div class="post-box">
-                    <div class="categories">
-                        <span class="category">travel</span>
-                        <span class="category">health</span>
-                    </div>
-                    <h2 class="post__title">10 мест, ради которых стоит проснуться на рассвете</h2>
-                    <div class="date-author">
-                        <span class="post__date">10 июня 2019</span>
-                        <span class="post__author">Неизвестный автор</span>
-                    </div>
-                    <p class="post-text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
-                </div>
-            </article>
-            <article class="post">
-                <img class="post__img" src="./images/last-post2.jpg" alt="No images">
-                <div class="post-box">
-                    <div class="categories">
-                        <span class="category">health</span>
-                        <span class="category">lifestyle</span>
-                    </div>
-                    <h2 class="post__title">ЙОга для начинающих в домашних условиях</h2>
-                    <div class="date-author">
-                        <span class="post__date">10 июня 2019</span>
-                        <span class="post__author">Неизвестный автор</span>
-                    </div>
-                    <p class="post-text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
-                </div>
-            </article>
-            <article class="post">
-                <img class="post__img" src="./images/last-post3.jpg" alt="No images">
-                <div class="post-box">
-                    <div class="categories">
-                        <span class="category">music</span>
-                    </div>
-                    <h2 class="post__title">Лучшие музыкальные фестивали этого лета</h2>
-                    <div class="date-author">
-                        <span class="post__date">10 июня 2019</span>
-                        <span class="post__author">Неизвестный автор</span>
-                    </div>
-                    <p class="post-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
-                    <p class="post-text">Мы составили список лучших летних фестивалей по всему миру.</p>
-                </div>
-            </article>
-            <article class="post">
-                <img class="post__img" src="./images/last-post4.jpg" alt="No images">
-                <div class="post-box">
-                    <div class="categories">
-                        <span class="category">lifestyle</span>
-                        <span class="category">food</span>
-                    </div>
-                    <h2 class="post__title">Наукоёмкий подход к кулинарии</h2>
-                    <div class="date-author">
-                        <span class="post__date">10 июня 2019</span>
-                        <span class="post__author">Неизвестный автор</span>
-                    </div>
-                    <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
-                </div>
-            </article>
-            <article class="post">
-                <img class="post__img" src="./images/last-post5.jpg" alt="No images">
-                <div class="post-box">
-                    <div class="categories">
-                        <span class="category">travel</span>
-                        <span class="category">interior</span>
-                        <span class="category">art</span>
-                    </div>
-                    <h2 class="post__title">делаем модные принты на подушках для интерьера </h2>
-                    <div class="date-author">
-                        <span class="post__date">10 июня 2019</span>
-                        <span class="post__author">Неизвестный автор</span>
-                    </div>
-                    <p class="post-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
-                </div>
-            </article>
-        </section>
     </div>
 <!--                SHOP                  -->
     <section class="shop">
