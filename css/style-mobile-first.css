@@ -1,0 +1,255 @@
+@media (max-width: 768px) and (orientation: portrait) {
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    .banner {
+        background-image: url('../images/banner-mobile.jpg');
+    }
+
+    .nav {
+        width: 90.08%;
+        display: flex;
+        flex-direction: column;
+        margin: 3.33em auto;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        margin-top: 57%;
+    }
+
+    .banner-title {
+        width: 76%;
+        padding-bottom: 8.3em;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
+        height: 20em;
+        padding: 1.8em;
+    }
+
+    /*CSS style for BLOCK*/
+    .block {
+        display: flex;
+        width: 91.5%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*CSS style for POSTS*/
+    .post {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .post::before {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        width: 100%;
+        height: 3px;
+        background-color: #ededed;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 14px;
+    }
+    .banner {
+        background-image: url('../images/banner-bg-tablet.jpg');
+    }
+    .menu {
+        display: none;
+    }
+    .nav {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        margin: 3.33em auto;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1659px) {
+    h1 {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 15px;
+    }
+
+
+    .banner {
+        background-image: url('../images/banner-bg-tablet.jpg');
+    }
+
+    .nav {
+        width: 92%;
+        flex-direction: row-reverse;
+        margin: 3.33em auto;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 22.41%;
+        margin-top: 2.37%;
+    }
+
+    .intro {
+        margin-bottom: 4.5em;
+    }
+
+    .banner-title {
+        width: 82%;
+        text-align: center;
+        margin: 1.5em auto;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        gap: 0.4em;
+    }
+
+    .article {
+        width: calc((100% - 0.4em)/2);
+        height: 20.5em;
+        padding: 1.4em;
+        /*position: relative;*/
+    }
+    /*CSS style for BLOCK*/
+    .block {
+        /*display: flex;*/
+        width: 70.48%;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4em;
+    }
+}
+
+
+
+
+
+
+
+/*----The Biggest---*/
+@media (min-width: 1660px) {
+    h1 {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .banner {
+        background-image: url('../images/banner-bg.jpg');
+        margin-bottom: 5px;
+    }
+
+    .nav {
+        width: 71%;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-burger {
+        display: none;
+    }
+
+    .logo {
+        width: 15.36%;
+        margin-top: 2.37%;
+    }
+
+    .banner-title {
+        width: 42%;
+        vertical-align: bottom;
+        margin: 3em auto;
+    }
+
+    .article {
+        width: 25%;
+        height: 22.5em;
+        padding: 1.5em;
+    }
+
+    /*CSS style for BLOCK*/
+    .block {
+        width: 70.48%;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*CSS style for POSTS*/
+    .post-list {
+        width: 64.95%;
+    }
+
+    .post__img {
+        width: 50%;
+    }
+
+    .post-box {
+        width: 50%;
+        padding-left: 2em;
+    }
+
+    /*CSS style for SIDEBAR*/
+    .sidebar {
+        width: 23.08%;
+    }
+}
