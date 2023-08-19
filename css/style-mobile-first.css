@@ -9,6 +9,9 @@
         font-size: 14px;
     }
     h4 {
+        font-size: 13px;
+    }
+    h5 {
         font-size: 12px;
     }
     p {
@@ -57,8 +60,7 @@
         display: flex;
         width: 91.5%;
         flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 4em auto 0 auto;
     }
 
     /*CSS style for POSTS*/
@@ -77,6 +79,25 @@
         background-color: #ededed;
     }
 
+    /*CSS style for SHOP*/
+    .shop {
+        width: 91.5%;
+    }
+
+    .shop-items {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .shop-item {
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 91.5%;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {
@@ -176,7 +197,7 @@
 
 
 
-/*----The Biggest---*/
+/*----The Biggest screen---*/
 @media (min-width: 1660px) {
     h1 {
         font-size: 46px;
@@ -188,6 +209,9 @@
         font-size: 14px;
     }
     h4 {
+        font-size: 13px;
+    }
+    h5 {
         font-size: 12px;
     }
     p {
@@ -195,13 +219,12 @@
     }
     .banner {
         background-image: url('../images/banner-bg.jpg');
-        margin-bottom: 5px;
+        padding: 1.2% 14.94%;
     }
 
     .nav {
-        width: 71%;
         flex-direction: row-reverse;
-        margin: 0 auto;
+        margin-top: 1.2%;
         justify-content: space-between;
         align-items: center;
     }
@@ -212,13 +235,13 @@
 
     .logo {
         width: 15.36%;
-        margin-top: 2.37%;
+        margin: 1.2% 0;
     }
 
     .banner-title {
-        width: 42%;
+        width: 61%;
         vertical-align: bottom;
-        margin: 3em auto;
+        margin: 2.33em auto;
     }
 
     .article {
@@ -239,17 +262,41 @@
         width: 64.95%;
     }
 
-    .post__img {
-        width: 50%;
+    .post-inner {
+        width: 68.65%
     }
 
     .post-box {
         width: 50%;
-        padding-left: 2em;
+        /*padding-left: 2em;*/
     }
 
     /*CSS style for SIDEBAR*/
     .sidebar {
         width: 23.08%;
+    }
+
+    /*CSS style for SHOP*/
+    .shop {
+        width: 70.48%
+    }
+
+    shop-items {
+        width: 70.48%;
+    }
+
+    .shop-item {
+        width: 33%;
+        margin-top: 17.5%;
+    }
+
+    .shop-item:nth-child(3n+2) {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 70.48%;
     }
 }
