@@ -91,7 +91,20 @@
 
     .shop-item {
         width: 100%;
-        margin-top: 50%;
+        margin-top: 76%;
+        margin-bottom: 1.5em;
+    }
+
+    .shop-item__container {
+        bottom: 78.5%;
+        width: 100%;
+        height: 123.5%;
+        padding: 0 1.4em 100% 1.4em;
+
+    }
+
+    .shop-item__container::before {
+        padding-top: 100%;
     }
 
     /*CSS style for FOOTER*/
@@ -118,21 +131,51 @@
         align-items: flex-end;
         justify-content: center;
     }
+
+    /*CSS style for SHOP*/
+    .shop {
+        width: 91.5%;
+    }
+
+    .shop-items {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .shop-item {
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    .shop-item__img {
+        bottom: 78.5%;
+        width: 100%;
+        padding: 0.7em 1.25em;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 90.9%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1659px) {
     h1 {
         font-size: 46px;
     }
+
     h2 {
         font-size: 20px;
     }
+
     h3 {
         font-size: 14px;
     }
+
     h4 {
         font-size: 12px;
     }
+
     p {
         font-size: 15px;
     }
@@ -175,11 +218,13 @@
     }
 
     .article {
-        width: calc((100% - 0.4em)/2);
+        /*width: calc((100% - 0.4em)/2);*/
+        width: 50%;
         height: 20.5em;
         padding: 1.4em;
         /*position: relative;*/
     }
+
     /*CSS style for BLOCK*/
     .block {
         /*display: flex;*/
@@ -189,8 +234,34 @@
         margin-right: auto;
         margin-top: 4em;
     }
-}
 
+    /*CSS style for SHOP*/
+    .shop {
+        width: 90.8%;
+    }
+
+    .shop-items {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1.4em;
+    }
+
+    .shop-item {
+        width: calc((100% - 1.4em) / 2);
+        margin-top: 77.5%;
+    }
+
+    .shop-item__img {
+        bottom: 78.5%;
+        width: 100%;
+        padding: 0.7em 1.25em;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 90.8%;
+    }
+}
 
 
 
@@ -287,12 +358,19 @@
 
     .shop-item {
         width: 33%;
-        margin-top: 17.5%;
+        margin-top: 14.5%;
+        /*padding: 0.25em 1.25em;*/
     }
 
     .shop-item:nth-child(3n+2) {
         margin-left: 4em;
         margin-right: 4em;
+    }
+
+    .shop-item__container {
+        bottom: 78.5%;
+        width: 100%;
+        padding: 0.7em 1.25em;
     }
 
     /*CSS style for FOOTER*/
