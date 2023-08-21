@@ -177,7 +177,6 @@ p {
 }
 
 .link:hover  {
-    /*color: red;*/
     text-decoration: underline;
 }
 
@@ -290,9 +289,7 @@ p {
 }
 
 .post::before {
-    /*content: "";*/
     position: absolute;
-    /*bottom: -25px;*/
     width: 100%;
     height: 3px;
 }
@@ -308,16 +305,6 @@ p {
     display: flex;
     flex-direction: column;
     color: #0f0d0e;
-}
-
-.post-box::before {
-    /*content: "";*/
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    display: inline-block;
-    background-color: #eeeeee;
 }
 
 .post__title {
@@ -353,7 +340,7 @@ p {
     margin-bottom: 3.75em;
 }
 
-/*CSS style for LASTEST-POSTS*/
+/*CSS style for LATEST-POSTS*/
 .latest-card {
     display: flex;
     padding-bottom: 1.4em;
@@ -375,13 +362,10 @@ p {
 }
 
 .latest__title {
-    /*font-size: 0.88em;*/
-    /*line-height: 1.29em;*/
     color: #000000;
     text-decoration: none;
     text-align: left;
     wrap-option: wrap;
-    /*vertical-align: text-top;*/
 }
 
 /*CSS style for SUBSCRIBE*/
@@ -429,8 +413,8 @@ input:focus, textarea:focus, select:focus {
     height: 48px;
     background-color: #f3f7f5;
     opacity: 0.541;
-    /*font-size: 0.81em;*/
-    /*line-height: 3.07em;*/
+    font-size: 0.81em;
+    line-height: 3.07em;
     color: #000000;
     margin-bottom: 0.65em;
     border: none;
@@ -445,8 +429,6 @@ input:focus, textarea:focus, select:focus {
 .button {
     width: 100%;
     height: 48px;
-    /*font-size: 0.81em;*/
-    /*line-height: 3.07em;*/
     text-transform: uppercase;
     color: #ffffff;
     background-color: #b59f5b;
@@ -473,9 +455,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .tag {
-    /*text-transform: uppercase;*/
     text-decoration: none;
-
     color: #0f0d0e;
     border: 3px solid #eeeeee;
     display: inline-block;
@@ -492,9 +472,10 @@ input:focus, textarea:focus, select:focus {
 .themes-list {
     list-style: none;
 }
+
 .theme {
-    font-size: 0.81em;
-    line-height: 3.07em;
+    font-size: 14px;
+    line-height: 47px;
     color: #000000;
     position: relative;
 }
@@ -555,7 +536,7 @@ input:focus, textarea:focus, select:focus {
 
 .popup {
     width: 390px;
-    /*height: 589px;*/
+    height: 589px;
     padding: 2.7em 2.3em;
     display: flex;
     flex-direction: column;
@@ -733,61 +714,40 @@ input:focus, textarea:focus, select:focus {
 
 .shop-items {
     display: flex;
-
 }
 
 .shop-item {
     display: flex;
     flex-direction: column;
     /*padding: 1.25em;*/
-    /*position: relative;*/
+    position: relative;
     /*align-items: stretch;*/
 
 }
 
-/*.shop-item::before {*/
-/*    content: "";*/
-/*    padding-top: 100%;*/
-/*}*/
-
 .shop-item__container {
-    position: relative;
-    /*display: block;*/
-
-    /*bottom: 80%;*/
-    /*left: 0;*/
-    z-index: -1;
-    width: 100%;
-    /*padding:  0 1.3em;*/
-    /*margin-top: 10%;*/
-    background-color: transparent;
     overflow: hidden;
-    justify-content: center;
-    padding-bottom: 100%;
-    /*flex: 1;*/
-}
-
-.shop-item__container::before {
-    content: "";
-    display: block;
-    /*padding-top: 100%;*/
 }
 
 .shop-item__img {
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*max-height: 100%;*/
+    /*display: block;*/
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-
+    /*transform: scale(1.4);*/
+    z-index: -1;
 }
 
 .shop-item__content {
-    border: 3px solid #b59f5b;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 1.25em;
+    border: 3px solid #b59f5b;
+    padding: 16px 23px;
+    /*background-color: transparent;*/
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .shop-item__title {
@@ -840,7 +800,7 @@ input:focus, textarea:focus, select:focus {
 .shop-btn {
     display: inline-block;
     padding: 10px 20px;
-    color:  #ffffff;
+    color: #ffffff;
     background-color: #b59f5b;
     text-decoration: none;
     margin-top: auto;
@@ -861,7 +821,6 @@ footer {
 }
 
 .socials {
-    /*width: 70.48%;*/
     height: 83px;
     background: #f4f7f6;
     display: flex;
