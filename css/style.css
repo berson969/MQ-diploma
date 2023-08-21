@@ -67,8 +67,8 @@ p {
     bottom: 1.5em;
     width: 67px;
     height: 4px;
-    display: inline-block;
-    opacity: 0.4;
+    /*display: inline-block;*/
+    /*opacity: 0.4;*/
     background-color: #b59f5b;
     position: absolute;
     left: 50%;
@@ -98,8 +98,8 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s all;
@@ -164,8 +164,8 @@ p {
     width: 100%;
     padding: 17px;
     background-image: url("../svg/form-arrows.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 17px) center;
+    /*background-repeat: no-repeat;*/
+    /*background-position: calc(100% - 17px) center;*/
     background-size: 10px;
     border: none;
     outline: none;
@@ -233,8 +233,8 @@ p {
     max-width: 100%;
     width: 100%;
     min-height: 10em;
-    background-color: #f3f7f5;
-    resize: none;
+    /*background-color: #f3f7f5;*/
+    /*resize: none;*/
     font-family: 'OpenSans', sans-serif;
     opacity: 0.541;
     color: #000000;
@@ -258,8 +258,8 @@ p {
     color:  #ffffff;
     background-color: #b59f5b;
     text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
+    /*font-weight: bold;*/
+    /*text-decoration: none;*/
     border: none;
     cursor: pointer;
     text-align: center;
@@ -275,8 +275,8 @@ p {
     width: 1.5em;
     height: 1.5em;
     top: -2em;
-    right: 0;
-    border:none;
+    /*right: 0;*/
+    /*border:none;*/
     background-color: transparent;
     background-image: url("../svg/form-x.svg");
     background-size: cover;

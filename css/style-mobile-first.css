@@ -23,7 +23,7 @@
     }
 
     .nav {
-        width: 90.08%;
+        width: 91.67%;
         display: flex;
         flex-direction: column;
         margin: 3.33em auto;
@@ -58,7 +58,7 @@
     /*CSS style for BLOCK*/
     .block {
         display: flex;
-        width: 91.5%;
+        width: 91.67%;
         flex-direction: column;
         margin: 4em auto 0 auto;
     }
@@ -81,7 +81,7 @@
 
     /*CSS style for SHOP*/
     .shop {
-        width: 91.5%;
+        width: 91.67%;
     }
 
     .shop-items {
@@ -109,57 +109,59 @@
 
     /*CSS style for FOOTER*/
     .socials {
-        width: 91.5%;
+        width: 91.67%;
     }
 }
 
-@media (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {
-    body {
-        font-size: 14px;
-    }
-    .banner {
-        background-image: url('../images/banner-bg-tablet.jpg');
-    }
-    .menu {
-        display: none;
-    }
-    .nav {
-        width: 92%;
-        display: flex;
-        flex-direction: column;
-        margin: 3.33em auto;
-        align-items: flex-end;
-        justify-content: center;
-    }
+/*@media (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {*/
+/*    body {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*    .banner {*/
+/*        background-image: url('../images/banner-bg-tablet.jpg');*/
+/*    }*/
+/*    .menu {*/
+/*        display: none;*/
+/*    }*/
+/*    .nav {*/
+/*        width: 92%;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        margin: 3.33em auto;*/
+/*        align-items: flex-end;*/
+/*        justify-content: center;*/
+/*    }*/
 
-    /*CSS style for SHOP*/
-    .shop {
-        width: 91.5%;
-    }
+/*    !*CSS style for SHOP*!*/
+/*    .shop {*/
+/*        width: 91.5%;*/
+/*    }*/
 
-    .shop-items {
-        width: 100%;
-        flex-direction: column;
-    }
+/*    .shop-items {*/
+/*        width: 100%;*/
+/*        flex-direction: column;*/
+/*    }*/
 
-    .shop-item {
-        width: 100%;
-        margin-top: 50%;
-    }
+/*    .shop-item {*/
+/*        width: 100%;*/
+/*        margin-top: 50%;*/
+/*    }*/
 
-    .shop-item__img {
-        bottom: 78.5%;
-        width: 100%;
-        padding: 0.7em 1.25em;
-    }
+/*    .shop-item__img {*/
+/*        bottom: 78.5%;*/
+/*        width: 100%;*/
+/*        padding: 0.7em 1.25em;*/
+/*    }*/
 
-    /*CSS style for FOOTER*/
-    .socials {
-        width: 90.9%;
-    }
-}
+/*    !*CSS style for FOOTER*!*/
+/*    .socials {*/
+/*        width: 90.9%;*/
+/*    }*/
+/*}*/
 
-@media (min-width: 769px) and (max-width: 1659px) {
+@media (min-width: 360px) and (max-width: 768px) and (orientation: landscape),
+    (min-width: 769px) and (max-width: 1659px) {
+
     h1 {
         font-size: 46px;
     }
@@ -186,7 +188,7 @@
     }
 
     .nav {
-        width: 92%;
+        width: 90.89%;
         flex-direction: row-reverse;
         margin: 3.33em auto;
         align-items: flex-end;
@@ -218,8 +220,8 @@
     }
 
     .article {
-        /*width: calc((100% - 0.4em)/2);*/
-        width: 50%;
+        width: calc((100% - 0.4em)/2);
+        /*width: 50%;*/
         height: 20.5em;
         padding: 1.4em;
         /*position: relative;*/
@@ -228,7 +230,7 @@
     /*CSS style for BLOCK*/
     .block {
         /*display: flex;*/
-        width: 70.48%;
+        width: 90.89%;
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
@@ -237,7 +239,7 @@
 
     /*CSS style for SHOP*/
     .shop {
-        width: 90.8%;
+        width: 90.89%;
     }
 
     .shop-items {
@@ -259,7 +261,7 @@
 
     /*CSS style for FOOTER*/
     .socials {
-        width: 90.8%;
+        width: 90.89%;
     }
 }
 
