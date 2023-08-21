@@ -60,22 +60,19 @@
         display: flex;
         width: 91.67%;
         flex-direction: column;
-        margin: 4em auto 0 auto;
+        margin: 45px auto 0 auto;
     }
 
     /*CSS style for POSTS*/
     .post {
         display: flex;
         flex-direction: column;
-        position: relative;
+        /*position: relative;*/
     }
 
     .post::before {
         content: "";
-        position: absolute;
-        bottom: -25px;
-        width: 100%;
-        height: 3px;
+        bottom: -23px;
         background-color: #ededed;
     }
 
@@ -232,9 +229,36 @@
         /*display: flex;*/
         width: 90.89%;
         justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4em;
+        margin: 50px auto 0 auto;
+    }
+
+    /*CSS style for POSTS*/
+    .post-list {
+        width: calc((100% - 270px) * 0.92);
+    }
+    .post {
+        flex-direction: column;
+    }
+
+    .post::before {
+        content: "";
+        bottom: -20px;
+        background-color: #eeeeee;
+    }
+
+    .post-inner {
+        width: 100%
+    }
+
+    .post-box {
+        width: 100%;
+        position: relative;
+        /*padding-left: 2em;*/
+    }
+
+    /*CSS style for SIDEBAR*/
+    .sidebar {
+        width: 38.68%;
     }
 
     /*CSS style for SHOP*/
@@ -327,12 +351,11 @@
     .block {
         width: 70.48%;
         justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 64px auto 0 auto;
     }
     /*CSS style for POSTS*/
     .post-list {
-        width: 64.95%;
+        width: calc((100% - 270px) * 0.85);
     }
 
     .post-inner {
@@ -346,7 +369,7 @@
 
     /*CSS style for SIDEBAR*/
     .sidebar {
-        width: 23.08%;
+        width: 270px;
     }
 
     /*CSS style for SHOP*/
