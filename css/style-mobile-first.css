@@ -65,7 +65,6 @@
 
     /*CSS style for POSTS*/
     .post {
-        display: flex;
         flex-direction: column;
     }
 
@@ -93,22 +92,50 @@
 
     .shop-item {
         width: 100%;
+        /*margin-top: 66%;*/
         padding-top: 66%;
+        /*height: 100%;*/
+        /*top: -63%;*/
+        /*left: 23px;*/
+
     }
 
     .shop-item__img {
-        width: 100%;
-        height: 100%;
-        top: 10%;
-        left: 0;
+        /*width: 86.37%;*/
+        /*height: 56.2%;*/
+
+        /*top: 10%;*/
+        top: 50%;
+        left: 50%;
+        /*left: 22px;*/
+        /*margin: auto;*/
+        padding: 0 23px;
+        transform: translate(-50%, -50%) scale(1.5);
+        width: auto;
+        height: auto;
+        max-width: none;
+        max-height: none;
     }
 
-    .shop-item__container {
-        width: calc(100% - 46px);
-        padding-top: calc(100% - 46px);
-        margin: auto;
+    .shop-item__container::before {
+        /*width: 100%;*/
+        /*height: 100%;*/
+        width: 285px;
+        height: 285px;
+        /*width: calc(100% - 46px);*/
+        /*padding-top: 100%;*/
+        /*padding-top: calc(100% - 46px);*/
+        /*margin: auto;*/
+        margin-top: -30%;
         position: relative;
+
     }
+
+    /*.shop-item__container::before {*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*}*/
 
     /*CSS style for FOOTER*/
     .socials {
@@ -194,9 +221,12 @@
     /*CSS style for POSTS*/
     .post-list {
         width: calc((100% - 270px) * 0.92);
+        padding-right: 35px;
     }
+
     .post {
         flex-direction: column;
+
     }
 
     .post::before {
@@ -205,9 +235,13 @@
         background-color: #eeeeee;
     }
 
-    .post-inner {
-        width: 100%
-    }
+    /*.post-inner {*/
+    /*    width: 100%*/
+    /*}*/
+
+    /*.post__img {*/
+    /*    width: 100%;*/
+    /*}*/
 
     .post-box {
         width: 100%;
@@ -227,18 +261,18 @@
     .shop-items {
         width: 100%;
         flex-wrap: wrap;
-        gap: 1.4em;
+        gap: 26px;
     }
 
     .shop-item {
-        width: calc((100% - 1.4em) / 2);
-        margin-top: 77.5%;
+        width: calc((100% - 26px) / 2);
+        margin-top: 24.5%;
     }
 
     .shop-item__img {
-        bottom: 78.5%;
+        top: -66%;
         width: 100%;
-        padding: 0.7em 1.25em;
+        padding: 0 23px;
     }
 
     /*CSS style for FOOTER*/
@@ -317,6 +351,7 @@
 
     .post-box {
         width: 50%;
+        padding-left: 29px;
     }
 
     /*CSS style for SIDEBAR*/
