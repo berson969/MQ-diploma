@@ -131,12 +131,6 @@
 
     }
 
-    /*.shop-item__container::before {*/
-    /*    position: absolute;*/
-    /*    top: 0;*/
-    /*    left: 0;*/
-    /*}*/
-
     /*CSS style for FOOTER*/
     .socials {
         width: 91.67%;
@@ -205,14 +199,12 @@
 
     .article {
         width: calc((100% - 0.4em)/2);
-        /*width: 50%;*/
         height: 20.5em;
         padding: 1.4em;
     }
 
     /*CSS style for BLOCK*/
     .block {
-        /*display: flex;*/
         width: 90.89%;
         justify-content: space-between;
         margin: 50px auto 0 auto;
@@ -234,14 +226,6 @@
         bottom: -20px;
         background-color: #eeeeee;
     }
-
-    /*.post-inner {*/
-    /*    width: 100%*/
-    /*}*/
-
-    /*.post__img {*/
-    /*    width: 100%;*/
-    /*}*/
 
     .post-box {
         width: 100%;
@@ -270,7 +254,7 @@
     }
 
     .shop-item__img {
-        top: -66%;
+        top: -194px;
         width: 100%;
         padding: 0 23px;
     }
@@ -377,7 +361,7 @@
     .shop-item__img {
         width: 86.45%;
         height: auto;
-        top: -63%;
+        top: -173px;
         left: 23px;
     }
 
