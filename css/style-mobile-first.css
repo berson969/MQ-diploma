@@ -85,50 +85,17 @@
         width: 91.67%;
     }
 
-    .shop-items {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .shop-item {
         width: 100%;
-        /*margin-top: 66%;*/
-        padding-top: 66%;
-        /*height: 100%;*/
-        /*top: -63%;*/
-        /*left: 23px;*/
+        flex-grow: 1;
+    }
 
+    .shop-item__container {
+        padding-top: 86.36%;
     }
 
     .shop-item__img {
-        /*width: 86.37%;*/
-        /*height: 56.2%;*/
-
-        /*top: 10%;*/
-        top: 50%;
-        left: 50%;
-        /*left: 22px;*/
-        /*margin: auto;*/
-        padding: 0 23px;
-        transform: translate(-50%, -50%) scale(1.5);
-        width: auto;
-        height: auto;
-        max-width: none;
-        max-height: none;
-    }
-
-    .shop-item__container::before {
-        /*width: 100%;*/
-        /*height: 100%;*/
-        width: 285px;
-        height: 285px;
-        /*width: calc(100% - 46px);*/
-        /*padding-top: 100%;*/
-        /*padding-top: calc(100% - 46px);*/
-        /*margin: auto;*/
-        margin-top: -30%;
-        position: relative;
-
+        bottom: -33px;
     }
 
     /*CSS style for FOOTER*/
@@ -243,20 +210,19 @@
     }
 
     .shop-items {
-        width: 100%;
-        flex-wrap: wrap;
         gap: 26px;
     }
 
     .shop-item {
         width: calc((100% - 26px) / 2);
-        margin-top: 24.5%;
+    }
+
+    .shop-item__container {
+        padding-top: 66.86%;
     }
 
     .shop-item__img {
-        top: -194px;
-        width: 100%;
-        padding: 0 23px;
+        bottom: -30px;
     }
 
     /*CSS style for FOOTER*/
@@ -349,20 +315,19 @@
     }
 
     .shop-items {
-        flex-wrap: wrap;
         gap: 64px;
-        padding-top: 15%;
     }
 
     .shop-item {
         width: calc((100% - 128px) / 3);
     }
 
+    .shop-item__container {
+        padding-top: 58.75%;
+    }
+
     .shop-item__img {
-        width: 86.45%;
-        height: auto;
-        top: -173px;
-        left: 23px;
+        bottom: -36px;;
     }
 
     /*CSS style for FOOTER*/
