@@ -227,7 +227,7 @@
                 <h3 class="header title">рассылка</h3>
                 <div class="subs-content">
                     <label for="email"></label>
-                    <input id="email" placeholder="Ваш e-mail адрес" type="email" required>
+                    <input id="email" placeholder="Ваш e-mail адрес" type="email" autocomplete="email" required>
                     <button class="button">Подписаться</button>
                 </div>
             </section>
@@ -317,9 +317,8 @@
                             <!--        Textarea-->
                             <div class="text box">
                                 <p class="text__title subject" >Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-                                <label class="text-label">
-                                    <textarea class="textarea">Может, больше рецептов?</textarea>
-                                </label>
+                                <label for="text-id" class="text-label"></label>
+                                    <textarea id="text-id" class="textarea">Может, больше рецептов?</textarea>
                             </div>
 <!--                             Button SEND-->
                             <div class="send box">
