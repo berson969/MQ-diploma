@@ -94,6 +94,18 @@
         padding-top: 86.36%;
     }
 
+    .shop-item__1 {
+        background-image: url('../images/shop-item-mobile1.jpg');
+    }
+
+    .shop-item__2 {
+        background-image: url('../images/shop-item-mobile2.jpg');
+    }
+
+    .shop-item__3 {
+        background-image: url('../images/shop-item-mobile3.jpg');
+    }
+
     .shop-item__img {
         bottom: -33px;
     }
@@ -221,6 +233,18 @@
         padding-top: 66.86%;
     }
 
+    .shop-item__1 {
+        background-image: url('../images/shop-item-tablet1.jpg');
+    }
+
+    .shop-item__2 {
+        background-image: url('../images/shop-item-tablet2.jpg');
+    }
+
+    .shop-item__3 {
+        background-image: url('../images/shop-item-tablet3.jpg');
+    }
+
     .shop-item__img {
         bottom: -30px;
     }
@@ -324,6 +348,18 @@
 
     .shop-item__container {
         padding-top: 58.75%;
+    }
+
+    .shop-item__1 {
+        background-image: url('../images/shop-item-desk1.jpg');
+    }
+
+    .shop-item__2 {
+        background-image: url('../images/shop-item-desk2.jpg');
+    }
+
+    .shop-item__3 {
+        background-image: url('../images/shop-item-desk3.jpg');
     }
 
     .shop-item__img {
