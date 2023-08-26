@@ -344,7 +344,7 @@ p {
 /*CSS style for LATEST-POSTS*/
 .latest-card {
     display: flex;
-    padding-bottom: 1.4em;
+    margin-bottom: 1.4em;
 }
 
 .latest__img {
@@ -367,6 +367,10 @@ p {
     text-decoration: none;
     text-align: left;
     wrap-option: wrap;
+}
+
+.latest__title:hover {
+    opacity: 0.6;
 }
 
 /*CSS style for SUBSCRIBE*/
@@ -728,7 +732,6 @@ input:focus, textarea:focus, select:focus {
     width: 86.4%;
     margin: 0 auto;
     position: relative;
-    /*overflow: hidden;*/
 }
 
 .shop-item__img {
@@ -736,16 +739,9 @@ input:focus, textarea:focus, select:focus {
     height: 100%;
     position: absolute;
     z-index: -1;
-
     background-repeat: no-repeat;
-    /*object-fit: contain;*/
-    /*transform: scale(1.4);*/
-
     background-size: cover;
-    /*background-size: 137%;*/
     background-position: center;
-    /*background-position-x: 10%;*/
-    /*background-position-y: 10%;*/
 }
 
 .shop-item__content {
