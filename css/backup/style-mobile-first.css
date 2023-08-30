@@ -1,0 +1,373 @@
+@media (max-width: 768px) and (orientation: portrait) {
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    .banner {
+        background-image: url('../images/banner-mobile.jpg');
+    }
+
+    .nav {
+        width: 91.67%;
+        display: flex;
+        flex-direction: column;
+        margin: 3.33em auto;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        margin-top: 57%;
+    }
+
+    .banner-title {
+        width: 76%;
+        padding-bottom: 8.3em;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
+        height: 20em;
+        padding: 1.8em;
+    }
+
+    /*CSS style for BLOCK*/
+    .block {
+        display: flex;
+        width: 91.67%;
+        flex-direction: column;
+        margin: 45px auto 0 auto;
+    }
+
+    /*CSS style for POSTS*/
+    .post {
+        flex-direction: column;
+    }
+
+    .post::before {
+        content: "";
+        bottom: -23px;
+        background-color: #ededed;
+    }
+
+    .popup {
+        width: 331px;
+        height: 546px;
+        margin-top: 20px;
+    }
+
+    /*CSS style for SHOP*/
+    .shop {
+        width: 91.67%;
+    }
+
+    .shop-item {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .shop-item__container {
+        padding-top: 86.36%;
+    }
+
+    .shop-item__1 {
+        background-image: url('../images/shop-item-mobile1.jpg');
+    }
+
+    .shop-item__2 {
+        background-image: url('../images/shop-item-mobile2.jpg');
+    }
+
+    .shop-item__3 {
+        background-image: url('../images/shop-item-mobile3.jpg');
+    }
+
+    .shop-item__img {
+        bottom: -33px;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 91.67%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) and (orientation: landscape),
+    (min-width: 769px) and (max-width: 1659px) {
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+
+    .banner {
+        background-image: url('../images/banner-bg-tablet.jpg');
+    }
+
+    .nav {
+        width: 90.89%;
+        flex-direction: row-reverse;
+        margin: 3.33em auto;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 22.41%;
+        margin-top: 2.37%;
+    }
+
+    .intro {
+        margin-bottom: 4.5em;
+    }
+
+    .banner-title {
+        width: 82%;
+        text-align: center;
+        margin: 1.5em auto;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        gap: 0.4em;
+    }
+
+    .article {
+        width: calc((100% - 0.4em)/2);
+        height: 20.5em;
+        padding: 1.4em;
+    }
+
+    /*CSS style for BLOCK*/
+    .block {
+        width: 90.89%;
+        justify-content: space-between;
+        margin: 50px auto 0 auto;
+    }
+
+    /*CSS style for POSTS*/
+    .post-list {
+        width: calc((100% - 270px) * 0.92);
+        padding-right: 35px;
+    }
+
+    .post {
+        flex-direction: column;
+
+    }
+
+    .post::before {
+        content: "";
+        bottom: -20px;
+        background-color: #eeeeee;
+    }
+
+    .post-box {
+        width: 100%;
+        position: relative;
+    }
+
+    /*CSS style for SIDEBAR*/
+    .sidebar {
+        width: 38.68%;
+    }
+
+    /*CSS style for SHOP*/
+    .shop {
+        width: 90.89%;
+    }
+
+    .shop-items {
+        gap: 26px;
+    }
+
+    .shop-item {
+        width: calc((100% - 26px) / 2);
+    }
+
+    .shop-item__container {
+        padding-top: 66.86%;
+    }
+
+    .shop-item__1 {
+        background-image: url('../images/shop-item-tablet1.jpg');
+    }
+
+    .shop-item__2 {
+        background-image: url('../images/shop-item-tablet2.jpg');
+    }
+
+    .shop-item__3 {
+        background-image: url('../images/shop-item-tablet3.jpg');
+    }
+
+    .shop-item__img {
+        bottom: -30px;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 90.89%;
+    }
+}
+
+/*----The Biggest screen---*/
+@media (min-width: 1660px) {
+    h1 {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .banner {
+        background-image: url('../images/banner-bg.jpg');
+        padding: 1.2% 14.94%;
+    }
+
+    .nav {
+        flex-direction: row-reverse;
+        margin-top: 1.2%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-burger {
+        display: none;
+    }
+
+    .logo {
+        width: 15.36%;
+        margin: 1.2% 0;
+    }
+
+    .banner-title {
+        width: 61%;
+        vertical-align: bottom;
+        margin: 2.33em auto;
+    }
+
+    .article {
+        width: 25%;
+        height: 22.5em;
+        padding: 1.5em;
+    }
+
+    /*CSS style for BLOCK*/
+    .block {
+        width: 70.48%;
+        justify-content: space-between;
+        margin: 64px auto 0 auto;
+    }
+    /*CSS style for POSTS*/
+    .post-list {
+        width: calc((100% - 270px) * 0.85);
+    }
+
+    .post-inner {
+        width: 68.65%
+    }
+
+    .post-box {
+        width: 50%;
+        padding-left: 29px;
+    }
+
+    /*CSS style for SIDEBAR*/
+    .sidebar {
+        width: 270px;
+    }
+
+    /*CSS style for SHOP*/
+    .shop {
+        width: 70.48%
+    }
+
+    .shop-items {
+        gap: 64px;
+    }
+
+    .shop-item {
+        width: calc((100% - 128px) / 3);
+    }
+
+    .shop-item__container {
+        padding-top: 58.75%;
+    }
+
+    .shop-item__1 {
+        background-image: url('../images/shop-item-desk1.jpg');
+    }
+
+    .shop-item__2 {
+        background-image: url('../images/shop-item-desk2.jpg');
+    }
+
+    .shop-item__3 {
+        background-image: url('../images/shop-item-desk3.jpg');
+    }
+
+    .shop-item__img {
+        bottom: -36px;;
+    }
+
+    /*CSS style for FOOTER*/
+    .socials {
+        width: 70.48%;
+    }
+}

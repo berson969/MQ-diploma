@@ -1,48 +1,64 @@
 @media (max-width: 768px) and (orientation: portrait) {
     h1 {
         font-size: 26px;
+        line-height: 36px;
     }
     h2 {
         font-size: 16px;
+        line-height: 20px;
     }
     h3 {
         font-size: 14px;
-    }
-    h4 {
-        font-size: 13px;
-    }
-    h5 {
-        font-size: 12px;
+        line-height: 37px;
     }
     p {
         font-size: 14px;
+        line-height: 20px;
     }
 
     .banner {
-        background-image: url('../images/banner-mobile.jpg');
+        background-image: url('./../images/banner-mobile.jpg');
+    }
+
+    .banner-container, .block, .shop, .socials {
+        width: 91.66%;
+    }
+
+    .banner-container {
+        height: 640px;
     }
 
     .nav {
-        width: 91.67%;
-        display: flex;
         flex-direction: column;
-        margin: 3.33em auto;
         align-items: flex-end;
-        justify-content: center;
     }
+
     .menu {
         display: none;
     }
-    .logo {
+
+    .nav a {
         width: 100%;
-        height: 100%;
-        padding: 30px;
-        margin-top: 57%;
+        text-align: center;
+    }
+
+    .menu-burger {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 269px;
+        height: 61px;
+        margin-top: 184px;
+    }
+
+    .intro {
+        margin-top: 44px;
     }
 
     .banner-title {
-        width: 76%;
-        padding-bottom: 8.3em;
+        width: 98.8%;
+        margin: 0 auto;
     }
 
     .wrapper {
@@ -51,16 +67,14 @@
 
     .article {
         width: 100%;
-        height: 20em;
-        padding: 1.8em;
+        height: 232px;
+        padding: 15px;
     }
 
     /*CSS style for BLOCK*/
     .block {
-        display: flex;
-        width: 91.67%;
         flex-direction: column;
-        margin: 45px auto 0 auto;
+        margin-top: 44px;
     }
 
     /*CSS style for POSTS*/
@@ -74,17 +88,15 @@
         background-color: #ededed;
     }
 
-    .popup {
-        width: 331px;
-        height: 546px;
-        margin-top: 20px;
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar-container {
+        margin-bottom: 44px;
     }
 
     /*CSS style for SHOP*/
-    .shop {
-        width: 91.67%;
-    }
-
     .shop-item {
         width: 100%;
         flex-grow: 1;
@@ -94,62 +106,52 @@
         padding-top: 86.36%;
     }
 
-    .shop-item__1 {
-        background-image: url('../images/shop-item-mobile1.jpg');
-    }
-
-    .shop-item__2 {
-        background-image: url('../images/shop-item-mobile2.jpg');
-    }
-
-    .shop-item__3 {
-        background-image: url('../images/shop-item-mobile3.jpg');
-    }
-
-    .shop-item__img {
+    .shop-item__container img {
         bottom: -33px;
     }
 
     /*CSS style for FOOTER*/
-    .socials {
-        width: 91.67%;
+    footer {
+        margin: 45px auto;
+    }
+
+    .copyright {
+        margin-top: 38px;
     }
 }
 
-@media (min-width: 360px) and (max-width: 768px) and (orientation: landscape),
-    (min-width: 769px) and (max-width: 1659px) {
-
+@media (max-width: 768px) and (orientation: landscape),
+(min-width: 769px) and (max-width: 1659px) {
     h1 {
-        font-size: 46px;
+        font-size: 40px;
+        line-height: 55px;
     }
-
     h2 {
-        font-size: 20px;
+        font-size: 17px;
+        line-height: 22px;
     }
-
     h3 {
         font-size: 14px;
+        line-height: 37px;
     }
-
-    h4 {
-        font-size: 12px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
 
     .banner {
-        background-image: url('../images/banner-bg-tablet.jpg');
+        background-image: url('./../images/banner-bg-tablet.jpg');
+    }
+
+    .banner-container, .block, .shop, .socials{
+        width: 90.76%;
+    }
+
+    .banner-container {
+        height: 392px;
     }
 
     .nav {
-        width: 90.89%;
         flex-direction: row-reverse;
-        margin: 3.33em auto;
-        align-items: flex-end;
+        margin-top: 51px;
         justify-content: space-between;
+        align-items: center;
     }
 
     .menu {
@@ -157,47 +159,34 @@
     }
 
     .logo {
-        width: 22.41%;
-        margin-top: 2.37%;
-    }
-
-    .intro {
-        margin-bottom: 4.5em;
-    }
-
-    .banner-title {
-        width: 82%;
-        text-align: center;
-        margin: 1.5em auto;
+        width: 158px;
+        height: 36px;
     }
 
     .wrapper {
         flex-wrap: wrap;
-        gap: 0.4em;
+        gap: 5px;
     }
 
     .article {
-        width: calc((100% - 0.4em)/2);
-        height: 20.5em;
-        padding: 1.4em;
+        width: calc((100% - 5px)/2);
+        height: 247px;
+        padding: 21px;
     }
 
     /*CSS style for BLOCK*/
     .block {
-        width: 90.89%;
-        justify-content: space-between;
-        margin: 50px auto 0 auto;
+        margin-top: 51px;
     }
 
     /*CSS style for POSTS*/
     .post-list {
-        width: calc((100% - 270px) * 0.92);
-        padding-right: 35px;
+        width: calc(100% - 270px - 36px);
+        margin-right: 36px;
     }
 
     .post {
         flex-direction: column;
-
     }
 
     .post::before {
@@ -211,78 +200,59 @@
         position: relative;
     }
 
-    /*CSS style for SIDEBAR*/
-    .sidebar {
-        width: 38.68%;
-    }
-
     /*CSS style for SHOP*/
-    .shop {
-        width: 90.89%;
-    }
-
-    .shop-items {
-        gap: 26px;
-    }
-
     .shop-item {
         width: calc((100% - 26px) / 2);
     }
+
+    .shop-item:nth-child(odd) {
+        margin-right: 26px;
+}
 
     .shop-item__container {
         padding-top: 66.86%;
     }
 
-    .shop-item__1 {
-        background-image: url('../images/shop-item-tablet1.jpg');
+    picture img {
+        top: 15.6%;
     }
 
-    .shop-item__2 {
-        background-image: url('../images/shop-item-tablet2.jpg');
-    }
-
-    .shop-item__3 {
-        background-image: url('../images/shop-item-tablet3.jpg');
-    }
-
-    .shop-item__img {
-        bottom: -30px;
-    }
-
-    /*CSS style for FOOTER*/
-    .socials {
-        width: 90.89%;
+    .copyright {
+        margin-top: 42px;
     }
 }
 
-/*----The Biggest screen---*/
 @media (min-width: 1660px) {
     h1 {
-        font-size: 46px;
+        font-size: 45px;
+        line-height: 75px;
     }
+
     h2 {
         font-size: 20px;
+        line-height: 24px;
     }
+
     h3 {
         font-size: 14px;
+        line-height: 40px;
     }
-    h4 {
-        font-size: 13px;
-    }
-    h5 {
-        font-size: 12px;
-    }
-    p {
-        font-size: 15px;
-    }
+
     .banner {
-        background-image: url('../images/banner-bg.jpg');
-        padding: 1.2% 14.94%;
+        background-image: url('./../images/banner-bg.jpg');
+    }
+
+    .banner-container, .block, .shop, .socials {
+        width: 70.48%;
+    }
+
+    .banner-container {
+        height: 450px;
     }
 
     .nav {
         flex-direction: row-reverse;
-        margin-top: 1.2%;
+        margin-top: 29px;
         justify-content: space-between;
         align-items: center;
     }
@@ -292,52 +262,51 @@
     }
 
     .logo {
-        width: 15.36%;
-        margin: 1.2% 0;
+        width: 179px;
+        height: 41px;
+    }
+
+    .intro {
+        margin-top: 77px;
     }
 
     .banner-title {
-        width: 61%;
-        vertical-align: bottom;
-        margin: 2.33em auto;
+        width: 58.8%;
+        margin: 0 auto;
     }
 
     .article {
         width: 25%;
-        height: 22.5em;
-        padding: 1.5em;
+        height: 319px;
+        padding: 24px;
     }
 
     /*CSS style for BLOCK*/
     .block {
-        width: 70.48%;
-        justify-content: space-between;
-        margin: 64px auto 0 auto;
+        margin-top: 64px;
     }
+
     /*CSS style for POSTS*/
     .post-list {
-        width: calc((100% - 270px) * 0.85);
+        width: calc(100% - 270px - 122px);
+        margin-right: 122px;
     }
 
     .post-inner {
-        width: 68.65%
+        width: 381px;
+        height: 294px;
     }
 
     .post-box {
-        width: 50%;
+        width: calc(100% - 381px);
         padding-left: 29px;
     }
 
-    /*CSS style for SIDEBAR*/
-    .sidebar {
-        width: 270px;
+    .post-box .categories {
+        margin-top: -13px;
     }
 
     /*CSS style for SHOP*/
-    .shop {
-        width: 70.48%
-    }
-
     .shop-items {
         gap: 64px;
     }
@@ -350,24 +319,11 @@
         padding-top: 58.75%;
     }
 
-    .shop-item__1 {
-        background-image: url('../images/shop-item-desk1.jpg');
+    picture img {
+        top: 16.15%;
     }
 
-    .shop-item__2 {
-        background-image: url('../images/shop-item-desk2.jpg');
-    }
-
-    .shop-item__3 {
-        background-image: url('../images/shop-item-desk3.jpg');
-    }
-
-    .shop-item__img {
-        bottom: -36px;;
-    }
-
-    /*CSS style for FOOTER*/
-    .socials {
-        width: 70.48%;
+    .copyright {
+        margin-top: 63px;
     }
 }
