@@ -536,6 +536,162 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     transform: scale(0);
 }
 
+.popup {
+    width: 390px;
+    height: 589px;
+    padding: 29px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    /*border: 1px solid black;*/
+}
+
+.subject {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    flex-grow: 1;
+}
+
+.popup__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000000;
+    text-transform: none;
+    font-weight: normal;
+}
+
+/*CSS style for DropDown*/
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.dropdown__select {
+    width: 100%;
+    position: relative;
+}
+
+.dropdown__select select {
+    appearance: none;
+    width: 100%;
+    padding: 17px;
+    background-image: url("./../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px) center;
+    background-size: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: #f3f7f5;
+}
+
+.dropdown__select select:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown__select select:focus {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/*CSS style for RadioButton*/
+.radio-btn {
+    display: inline;
+    margin: 0 20px;
+}
+
+.radio-icon {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    /*line-height: 1.58em;*/
+    position: relative;
+}
+
+.radio-icon:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: -24px;
+    position: absolute;
+    background-image: url("./../svg/form-empty-circle.svg");
+    background-size: cover;
+}
+
+.radio-icon:hover  {
+    opacity: 0.6;
+}
+
+.radio-icon:focus {
+    outline: 1px solid  #b59f5b;
+}
+
+.radio-btn input[type="radio"]:checked + .radio-icon:before {
+    background-image: url("./../svg/form-circle.svg");
+}
+
+.textarea {
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    height: 132px;
+    background-color: #f3f7f5;
+    resize: none;
+    font-family: 'OpenSans', sans-serif;
+    opacity: 0.541;
+    color: #000000;
+    padding: 21px;
+}
+
+.textarea:focus {
+    outline: 1px solid #b59f5b;
+}
+
+/*CSS style for Button Send*/
+.btn {
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    color:  #ffffff;
+    background-color: #b59f5b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+/*CSS style for Button Close*/
+.popup__close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -32px;
+    right: 0;
+    border:none;
+    background-color: transparent;
+    background-image: url("./../svg/form-x.svg");
+    background-size: cover;
+    cursor: pointer;
+}
+
 /*CSS style for SHOP*/
 .shop {
     display: flex;
@@ -556,20 +712,16 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 }
 
 .shop-item__container {
-    width: 86.4%;
-    margin: 0 auto;
-    position: relative;
+    margin-bottom: -30px;
 }
 
 .shop-item__container img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: -1;
-    background-color: #eff6f1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0 23px;
 }
 
 .shop-item__content {

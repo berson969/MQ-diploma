@@ -96,18 +96,16 @@
         margin-bottom: 44px;
     }
 
+    .popup {
+        width: 331px;
+        height: 546px;
+    }
+
     /*CSS style for SHOP*/
     .shop-item {
         width: 100%;
         flex-grow: 1;
-    }
-
-    .shop-item__container {
-        padding-top: 86.36%;
-    }
-
-    .shop-item__container img {
-        bottom: -33px;
+        margin-bottom: 26px;
     }
 
     /*CSS style for FOOTER*/
@@ -201,20 +199,12 @@
     }
 
     /*CSS style for SHOP*/
+    .shop-items {
+        gap: 26px;
+    }
     .shop-item {
         width: calc((100% - 26px) / 2);
-    }
-
-    .shop-item:nth-child(odd) {
-        margin-right: 26px;
-}
-
-    .shop-item__container {
-        padding-top: 66.86%;
-    }
-
-    picture img {
-        top: 15.6%;
+        /*width: 50%;*/
     }
 
     .copyright {
@@ -313,14 +303,6 @@
 
     .shop-item {
         width: calc((100% - 128px) / 3);
-    }
-
-    .shop-item__container {
-        padding-top: 58.75%;
-    }
-
-    picture img {
-        top: 16.15%;
     }
 
     .copyright {
