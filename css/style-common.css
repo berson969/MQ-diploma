@@ -163,7 +163,7 @@ body {
 /*CSS style for TRENDS*/
 .trends {
     width: 100%;
-    padding-top: 3.9em;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
 }
