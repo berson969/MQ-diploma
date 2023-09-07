@@ -24,10 +24,6 @@
         width: 91.66%;
     }
 
-    .banner-container {
-        height: 640px;
-    }
-
     .nav {
         flex-direction: column;
         align-items: flex-end;
@@ -49,11 +45,12 @@
     .logo {
         width: 269px;
         height: 61px;
-        margin-top: 184px;
+        margin-top: 175px;
     }
 
     .intro {
-        margin-top: 44px;
+        margin-top: 45px;
+        margin-bottom: 200px
     }
 
     .banner-title {
@@ -141,10 +138,6 @@
         width: 90.76%;
     }
 
-    .banner-container {
-        height: 392px;
-    }
-
     .nav {
         flex-direction: row-reverse;
         margin-top: 51px;
@@ -159,6 +152,11 @@
     .logo {
         width: 158px;
         height: 36px;
+    }
+
+    .intro {
+        margin-top: 75px;
+        margin-bottom: 115px;
     }
 
     .wrapper {
@@ -236,13 +234,9 @@
         width: 70.48%;
     }
 
-    .banner-container {
-        height: 450px;
-    }
-
     .nav {
         flex-direction: row-reverse;
-        margin-top: 29px;
+        margin-top: 35px;
         justify-content: space-between;
         align-items: center;
     }
@@ -257,7 +251,7 @@
     }
 
     .intro {
-        margin-top: 77px;
+        margin: 110px 0;
     }
 
     .banner-title {
