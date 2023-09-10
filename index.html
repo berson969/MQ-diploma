@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML-diploma</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -97,6 +97,7 @@
     <div class="block">
 <!--        Section POSTS     -->
         <section class="post-list">
+            <h3 class="visually-hidden">Post List</h3>
             <article class="post">
                 <div class="post-inner">
                     <img class="post__img" src="./images/last-post1.jpg" alt="No images">
@@ -229,6 +230,7 @@
             </section>
 <!--Section SEARCH-->
             <section class="search sidebar-container">
+                <h3 class="visually-hidden">Search</h3>
                 <label for="query"> </label>
                 <input id="query" placeholder="Найти..." required>
                 <button class="search-btn">
@@ -414,7 +416,7 @@
 </main>
 <footer>
 <!--                SOCIALS               -->
-    <address class="socials">
+    <section class="socials">
         <a href="#0" class="socials-link" style="background: url('./svg/001-dribbble.svg');">
             <h6 class="socials-link-text">dribbble</h6>
         </a>
@@ -424,7 +426,7 @@
         <a href="#0" class="socials-link" style="background-image: url('./svg/003-tumblr.svg');">
             <h6 class="socials-link-text">tumblr</h6>
         </a>
-    </address>
+    </section>
 <!--               COPYRIGHT              -->
     <h5 class="copyright">Copyright © 2009–2019 City Blog LLC.</h5>
 </footer>
