@@ -76,7 +76,6 @@ body {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
 }
 
 .banner-container {
@@ -177,6 +176,7 @@ body {
 .article {
     position: relative;
     display: flex;
+    /*justify-content: flex-end;*/
 }
 
 .trend-background {
@@ -207,6 +207,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: flex-end;
     margin-top: auto;
     padding: 28px;
     border: 3px solid #b59f5b;
