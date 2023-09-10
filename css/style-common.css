@@ -170,11 +170,13 @@ body {
 
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
 .article {
     position: relative;
+    display: flex;
 }
 
 .trend-background {
@@ -188,7 +190,6 @@ body {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color:  #eff6f1;
-
 }
 
 .trend-background::before {
@@ -205,11 +206,9 @@ body {
 .trend-block {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 1.3em;
-    bottom: 1.2em;
-    right: 1.3em;
-    padding: 1.8em;
+    width: 100%;
+    margin-top: auto;
+    padding: 28px;
     border: 3px solid #b59f5b;
 }
 
@@ -535,7 +534,6 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     flex-direction: column;
     position: relative;
     background-color: #fff;
-    /*border: 1px solid black;*/
 }
 
 .subject {
