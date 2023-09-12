@@ -21,7 +21,8 @@
     }
 
     .banner-container, .block, .shop, .socials {
-        width: 91.66%;
+        min-width: 330px;
+        width: 91%;
     }
 
     .nav {
@@ -96,6 +97,7 @@
     .popup {
         width: 331px;
         height: 546px;
+        padding: 30px 27px;
     }
 
     /*CSS style for SHOP*/
@@ -134,8 +136,9 @@
         background-image: url('./../images/banner-bg-tablet.jpg');
     }
 
-    .banner-container, .block, .shop, .socials{
-        width: 90.76%;
+    .banner-container, .block, .shop, .socials {
+        max-width: 900px;
+        width: 91%;
     }
 
     .nav {
@@ -161,9 +164,7 @@
 
     .article {
         width: calc((100% - 5px)/2);
-        /*padding: 8.5% 2.5% 2% 2.5%;*/
         padding: 68px 20px 17px 20px;
-
     }
 
     .banner-title {
@@ -201,9 +202,9 @@
     .shop-items {
         gap: 26px;
     }
+
     .shop-item {
         width: calc((100% - 26px) / 2);
-        /*width: 50%;*/
     }
 
     .copyright {
@@ -222,9 +223,8 @@
         line-height: 24px;
     }
 
-    h3 {
+    .category a {
         font-size: 14px;
-        line-height: 40px;
     }
 
     .banner {
@@ -232,7 +232,7 @@
     }
 
     .banner-container, .block, .shop, .socials {
-        width: 70.48%;
+        max-width: 1175px;
     }
 
     .nav {
@@ -285,10 +285,6 @@
     .post-box {
         width: calc(100% - 381px);
         padding-left: 29px;
-    }
-
-    .post-box .categories {
-        margin-top: -13px;
     }
 
     /*CSS style for SHOP*/

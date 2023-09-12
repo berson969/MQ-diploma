@@ -104,10 +104,7 @@ body {
     content:"";
     width: 100%;
     height: 20%;
-
-    /*border-radius: 5px;*/
     background-color: #ffffff;
-
     position: absolute;
     left: 0;
 }
@@ -124,10 +121,7 @@ body {
     width: 100%;
     height: 20%;
     margin-top: -0.1em;
-
-    /*border-radius: 5px;*/
     background-color: #ffffff;
-
     position: absolute;
     left: 0;
     top: 50%;
@@ -139,9 +133,9 @@ body {
     gap: 32px;
 
 }
+
 .menu__link {
     flex-grow: 1;
-    /*z-index: 1;*/
 }
 
 .link {
@@ -176,7 +170,6 @@ body {
 .article {
     position: relative;
     display: flex;
-    /*justify-content: flex-end;*/
 }
 
 .trend-background {
@@ -216,15 +209,18 @@ body {
 .categories {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.category {
+.category a {
     color: #b59f5b;
-    margin-right: 24px;
+    margin-right: 18px;
     text-decoration: none;
+
 }
 
-.category:hover, .post__title:hover{
+.category a:hover, .post__title:hover{
     text-decoration: underline;
 }
 
@@ -232,6 +228,7 @@ body {
     color: #ffffff;
     text-align: left;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .trend-title:hover {
@@ -252,7 +249,7 @@ body {
 
 .post {
     display: flex;
-    margin-bottom: 3.75em;
+    margin-bottom: 42px;
     position: relative;
 }
 
@@ -262,6 +259,9 @@ body {
     height: 3px;
 }
 
+.post-inner {
+    margin-bottom: 18px;
+}
 
 .post__img {
     width: 100%;
@@ -276,12 +276,11 @@ body {
     color: #0f0d0e;
 }
 
-
-
 .post__title {
     text-align: left;
     text-decoration: none;
     color: #0f0d0e;
+    margin-top: 18px;
 }
 
 .post__title:hover {
@@ -366,11 +365,11 @@ body {
     padding-left: 15px;
     color: #000000;
     background-color: #f4f7f6;
-    border: 1px solid #b59f5b;
+    border: none;
 }
 
 input:focus, .search-btn:focus, textarea:focus, select:focus {
-    outline-offset: -3px;
+    outline-offset: -1px;
     outline: 1px solid #b59f5b;
 }
 
@@ -422,7 +421,6 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-
     text-align: center;
     cursor: pointer;
 }
@@ -433,22 +431,20 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 
 /*CSS style for TAGS*/
 .tags-content {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    gap: 5px
 }
 
 .tag {
+    font-size: 12px;
+    line-height: 24px;
     text-decoration: none;
     color: #0f0d0e;
     border: 3px solid #eeeeee;
-    display: inline-block;
-    margin: 5px;
-    padding: 0 10px;
-}
-
-.tag h5 {
-    line-height: 24px;
+    display: block;
+    padding: 0 13px;
 }
 
 .tag:hover {
@@ -458,7 +454,7 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 
 /*CSS style for THEMES*/
 .themes-list {
-    list-style: none;
+    list-style-type: none;
 }
 
 .theme {
@@ -487,7 +483,7 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 }
 
 .theme:hover {
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     color: #b59f5b;
 }
 
@@ -530,7 +526,7 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 .popup {
     width: 390px;
     height: 589px;
-    padding: 29px;
+    padding: 54px 30px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -542,6 +538,7 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     text-align: left;
     margin-bottom: 5px;
     flex-grow: 1;
+    font-size: 13px;
 }
 
 .popup__title {
@@ -559,24 +556,25 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     font-weight: normal;
 }
 
-/*CSS style for DropDown*/
-.box {
-    width: 100%;
+.form-element {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 30px;
+
 }
 
+/*CSS style for DropDown*/
 .dropdown__select {
     width: 100%;
     position: relative;
+    margin-bottom: 27px;
 }
 
 .dropdown__select select {
     appearance: none;
     width: 100%;
     padding: 17px;
+    font-size: 13px;
     background-image: url("./../svg/form-arrows.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 17px) center;
@@ -588,15 +586,17 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     background-color: #f3f7f5;
 }
 
-.dropdown__select select:hover {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
 .dropdown__select select:focus {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b59f5b;
 }
 
 /*CSS style for RadioButton*/
+.radio, .text {
+    display: flex;
+    margin-bottom: 27px;
+}
+
 .radio-btn {
     display: inline;
     margin: 0 20px;
@@ -606,15 +606,15 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     display: inline-block;
     width: 40px;
     text-align: center;
-    /*line-height: 1.58em;*/
+    font-size: 13px;
     position: relative;
 }
 
 .radio-icon:before {
     content: "";
-    width: 24px;
-    height: 24px;
-    left: -24px;
+    width: 15px;
+    height: 15px;
+    left: -15px;
     position: absolute;
     background-image: url("./../svg/form-empty-circle.svg");
     background-size: cover;
@@ -633,10 +633,11 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 }
 
 .textarea {
+    flex: 1;
     border: none;
     font-size: 13px;
     width: 100%;
-    height: 132px;
+    min-height: 138px;
     background-color: #f3f7f5;
     resize: none;
     font-family: 'OpenSans', sans-serif;
@@ -788,6 +789,7 @@ footer {
 }
 
 .socials {
+    width: 100%;
     height: 83px;
     background: #f4f7f6;
     display: flex;
@@ -822,6 +824,7 @@ footer {
     left: 25px;
     position: relative;
     display: inline-block;
+    color: #b59f5b;
     background: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -831,5 +834,7 @@ footer {
 
 .copyright {
     color: #999999;
+    text-transform: capitalize;
     text-align: center;
+    text-decoration: none;
 }
