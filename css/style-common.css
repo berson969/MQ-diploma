@@ -18,6 +18,11 @@
     margin: 0;
 }
 
+h3 {
+    font-size: 14px;
+    line-height: 38px;
+}
+
 h4 {
     font-size: 14px;
     line-height: 18px;
@@ -49,15 +54,16 @@ body {
 }
 
 .title {
-    padding-bottom: 2.25em;
+    padding-bottom: 38px;
     color: #0f0d0e;
     text-align: center;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .title::after {
     content: "";
-    bottom: 1.5em;
+    bottom: 15px;
     width: 67px;
     height: 4px;
     display: inline-block;
@@ -220,7 +226,7 @@ body {
 
 }
 
-.category a:hover, .post__title:hover{
+.category a:hover, .post__title:hover {
     text-decoration: underline;
 }
 
@@ -265,7 +271,7 @@ body {
 
 .post__img {
     width: 100%;
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: auto;
     background-color: #eff6f1;
 }
@@ -349,6 +355,10 @@ body {
     color: #000000;
     text-decoration: none;
     text-align: left;
+}
+
+.header {
+    line-height: 15px;
 }
 
 /*CSS style for SEARCH*/
@@ -458,20 +468,24 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 }
 
 .theme {
-    font-size: 14px;
-    line-height: 47px;
-    color: #000000;
     position: relative;
 }
 
 .theme::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;
     background-color: #eeeeee;
+}
+
+.theme a {
+    font-size: 14px;
+    line-height: 47px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .theme__tag {
@@ -482,8 +496,7 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     vertical-align: super;
 }
 
-.theme:hover {
-    /*background-color: #eeeeee;*/
+.theme a:hover {
     color: #b59f5b;
 }
 
@@ -720,15 +733,15 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
     display: flex;
     flex-direction: column;
     border: 3px solid #b59f5b;
-    padding: 0 6.8%;
+    padding: 20px 24px 0 24px;
 }
 
 .shop-item__title {
     color: #0f0d0e;
     text-decoration: none;
     text-align: left;
-    margin-top: 36px;
-    margin-bottom: 16px;
+    /*margin-top: 36px;*/
+    margin: 16px 0;
 }
 
 .shop-item__text {
@@ -747,13 +760,15 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 .bottom-item {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    /*padding: 20px;*/
+    margin: 26px 0;
 }
 
 .price {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
+    /*align-items: flex-end;*/
 }
 
 .shop-item__price {
@@ -767,17 +782,25 @@ input:focus, .search-btn:focus, textarea:focus, select:focus {
 }
 
 .shop-btn {
-    display: inline-block;
+    display: inline-flex;
+    height: 48px;
     padding: 0 28px;
     color: #ffffff;
     background-color: #b59f5b;
     text-decoration: none;
     margin-top: auto;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.shop-item__title:hover, .shop-btn:hover, .hint:hover {
+.hint:hover {
     color: #323232;
+}
+
+.shop-btn:hover {
+    background-color: #323232;
 }
 
 /*CSS style for FOOTER*/
@@ -828,12 +851,14 @@ footer {
     background: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
 .copyright {
     color: #999999;
+    font-size: 12px;
+    line-height: 40px;
     text-transform: capitalize;
     text-align: center;
     text-decoration: none;

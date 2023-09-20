@@ -7,10 +7,10 @@
         font-size: 16px;
         line-height: 20px;
     }
-    h3 {
-        font-size: 14px;
-        line-height: 37px;
-    }
+    /*h3 {*/
+    /*    font-size: 14px;*/
+    /*    line-height: 37px;*/
+    /*}*/
     p {
         font-size: 14px;
         line-height: 20px;
@@ -127,10 +127,10 @@
         font-size: 17px;
         line-height: 22px;
     }
-    h3 {
-        font-size: 14px;
-        line-height: 37px;
-    }
+    /*h3 {*/
+    /*    font-size: 14px;*/
+    /*    line-height: 37px;*/
+    /*}*/
 
     .banner {
         background-image: url('./../images/banner-bg-tablet.jpg');
